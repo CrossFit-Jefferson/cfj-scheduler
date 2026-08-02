@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KOPA CrossFit — Coach Availability</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<title>CrossFit Jefferson — Coach Availability</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #1a1a1a;
+    --ink: #01152D;
     --paper: #ffffff;
     --paper-2: #fafafa;
-    --accent: #ee5a24;
-    --accent-deep: #c94315;
-    --accent-soft: #fff1ec;
+    --accent: #D70D1B;
+    --accent-deep: #A80A15;
+    --accent-soft: #FDECEE;
     --good: #2d7a3f;
     --good-soft: #ecf6ee;
     --muted: #6b6b6b;
     --line: #e6e6e6;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: 'Inter', sans-serif; min-height: 100vh; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: 'Poppins', sans-serif; min-height: 100vh; }
   body { padding-bottom: 100px; }
 
   .wrap { max-width: 720px; margin: 0 auto; padding: 16px 16px 40px; }
@@ -30,16 +30,14 @@
     padding-bottom: 14px; border-bottom: 3px solid var(--ink);
     margin-bottom: 20px;
   }
-  .brand-text { font-family: 'Barlow Condensed'; line-height: 0.95; }
-  .brand-text .name {
-    font-size: 22px; font-weight: 800;
-    letter-spacing: 0.02em;
+  .brand-text { font-family: 'Sora'; line-height: 1; }
+  .brand-logo {
+    display: block; height: 46px; width: auto;
   }
-  .brand-text .name strong { color: var(--accent); }
   .brand-text .tag {
-    font-family: 'Inter'; font-size: 8px; font-weight: 600;
+    font-family: 'Poppins'; font-size: 8px; font-weight: 600;
     letter-spacing: 0.18em; color: var(--muted);
-    text-transform: uppercase; margin-top: 2px;
+    text-transform: uppercase; margin-top: 6px;
   }
   .badge {
     font-family: 'JetBrains Mono'; font-size: 10px;
@@ -49,8 +47,8 @@
   }
 
   h1 {
-    font-family: 'Barlow Condensed';
-    font-size: 42px; font-weight: 900; letter-spacing: -0.01em;
+    font-family: 'Sora';
+    font-size: 25px; font-weight: 800; letter-spacing: -0.02em;
     margin: 0 0 2px; line-height: 1; text-transform: uppercase;
   }
   h1 .accent { color: var(--accent); }
@@ -86,15 +84,15 @@
     padding: 24px 20px; text-align: center;
   }
   .error-box h2 {
-    font-family: 'Barlow Condensed'; font-size: 28px;
+    font-family: 'Sora'; font-size: 22px;
     margin: 0 0 8px; text-transform: uppercase;
   }
   .error-box p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
 
   /* COACH FORM */
   .greeting {
-    font-family: 'Barlow Condensed';
-    font-size: 26px; font-weight: 800;
+    font-family: 'Sora';
+    font-size: 21px; font-weight: 800;
     margin: 0 0 4px; text-transform: uppercase;
   }
   .greeting-email {
@@ -110,7 +108,7 @@
 
   .day-block { margin-bottom: 22px; }
   .day-label {
-    font-family: 'Barlow Condensed'; font-size: 16px; font-weight: 800;
+    font-family: 'Sora'; font-size: 16px; font-weight: 800;
     letter-spacing: 0.05em; text-transform: uppercase;
     padding-bottom: 6px; border-bottom: 2px solid var(--ink);
     margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline;
@@ -145,7 +143,7 @@
   .clear-btn {
     width: 100%; background: white; color: var(--ink);
     border: 2px solid var(--ink); padding: 10px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Sora';
     font-weight: 700; font-size: 13px; letter-spacing: 0.05em;
     text-transform: uppercase; cursor: pointer;
     margin-top: 16px; margin-bottom: 16px;
@@ -162,7 +160,7 @@
     z-index: 10;
   }
   .submit-count {
-    font-family: 'Barlow Condensed'; font-weight: 800;
+    font-family: 'Sora'; font-weight: 800;
     font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em;
     color: var(--muted); white-space: nowrap;
   }
@@ -170,7 +168,7 @@
   .submit-btn {
     flex: 1; background: var(--accent); color: white;
     border: 2px solid var(--ink); padding: 12px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Sora';
     font-weight: 800; font-size: 16px; letter-spacing: 0.05em;
     text-transform: uppercase; cursor: pointer;
     box-shadow: 4px 4px 0 var(--ink);
@@ -194,11 +192,11 @@
     background: var(--good); color: white;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-size: 32px; font-weight: 800;
+    font-size: 25px; font-weight: 800;
   }
   .success-title {
-    font-family: 'Barlow Condensed'; font-size: 32px;
-    font-weight: 900; margin: 0 0 8px; text-transform: uppercase;
+    font-family: 'Sora'; font-size: 25px;
+    font-weight: 800; margin: 0 0 8px; text-transform: uppercase;
     color: var(--accent);
   }
   .success-sub {
@@ -211,7 +209,7 @@
     margin-bottom: 16px;
   }
   .picks-summary h3 {
-    font-family: 'Barlow Condensed';
+    font-family: 'Sora';
     margin: 0 0 12px;
     font-size: 18px; text-transform: uppercase;
     border-bottom: 2px solid var(--ink); padding-bottom: 6px;
@@ -223,7 +221,7 @@
     margin-bottom: 14px;
   }
   .pick-day-name {
-    font-family: 'Barlow Condensed'; font-weight: 700;
+    font-family: 'Sora'; font-weight: 700;
     font-size: 14px; text-transform: uppercase;
     color: var(--accent-deep); margin-bottom: 4px;
     letter-spacing: 0.05em;
@@ -236,7 +234,7 @@
   .edit-btn {
     width: 100%; background: white; color: var(--ink);
     border: 2px solid var(--ink); padding: 14px;
-    font-family: 'Barlow Condensed';
+    font-family: 'Sora';
     font-weight: 800; font-size: 15px; letter-spacing: 0.05em;
     text-transform: uppercase; cursor: pointer;
   }
@@ -248,7 +246,7 @@
     transform: translateX(-50%) translateY(-100px);
     background: #d63333; color: white;
     padding: 12px 20px; font-size: 14px;
-    font-family: 'Inter'; font-weight: 600;
+    font-family: 'Poppins'; font-weight: 600;
     border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink);
     z-index: 100; transition: transform 0.3s;
     max-width: 90%; text-align: center;
@@ -261,7 +259,7 @@
 
 <header class="topbar">
   <div class="brand-text">
-    <div class="name"><strong>KOPA</strong> CrossFit</div>
+    <img src="cfj-logo.png" alt="CrossFit Jefferson" class="brand-logo">
     <div class="tag">Coach Scheduler</div>
   </div>
   <div class="badge" id="weekBadge">LOADING</div>
@@ -282,7 +280,7 @@
   <div class="error-box">
     <h2>Missing link info</h2>
     <p>This form should be opened from the link sent to your coaching email.</p>
-    <p>Check your inbox for the most recent message from KOPA CrossFit.</p>
+    <p>Check your inbox for the most recent message from CrossFit Jefferson.</p>
   </div>
 </div>
 
